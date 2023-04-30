@@ -1,0 +1,45 @@
+Leetcode Problems
+
+98. Validate Binary Search Tree
+class Solution:
+    def inorderTraversal(self, node):
+        if node.left:
+            self.inorderTraversal(node.left)
+        
+        self.res.append(node.val)
+        
+        if node.right:
+            self.inorderTraversal(node.right)
+    
+    def isValidBST(self, root: TreeNode) -> bool:
+        if root is None:
+            return
+        
+        self.res = []
+        self.inorderTraversal(root)
+        
+        n = len(self.res)
+        
+        ## List is sorted or not
+        ## Sorted : validBST -> True
+        ## Not Sorted : notvalidBST -> False
+        for i in range(n-1):
+            if self.res[i] >= self.res[i+1]:
+                return False
+        
+        return True
+
+700. Search in a Binary Search Tree
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+        if root is None or val == root.val:
+            return root
+        
+        return self.searchBST(root.left, val) if val < root.val else self.searchBST(root.right, val)

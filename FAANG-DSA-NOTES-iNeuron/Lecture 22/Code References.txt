@@ -1,0 +1,38 @@
+Deletion of nth node from the end
+Approach-1
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        dummy = ListNode(next = head)
+        length = 0
+        first = head
+        while first:
+            length += 1
+            first = first.next
+        
+        length = length - n
+        first = dummy
+        while length > 0:
+            length -= 1
+            first = first.next
+        
+        first.next = first.next.next
+        return dummy.next
+
+
+Approach-2
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        dummy = ListNode(next = head)
+        first = dummy
+        second = dummy
+        
+        for i in range(1, n+2):
+            first = first.next
+        
+        while first:
+            first = first.next
+            second = second.next
+            
+        
+        second.next = second.next.next
+        return dummy.next
