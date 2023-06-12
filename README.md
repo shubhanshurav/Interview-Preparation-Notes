@@ -21,7 +21,6 @@
 * [Segement Tree](https://github.com/shubhanshurav/The-Complete-FAANG-Preparation/tree/master/1%5D.%20DSA%20%2B%20CP/1%5D.%20DSA/1%5D.%20Data%20Structures/17%5D.%20Segment-Tree)
 
 
-
 ## Algorithm
 * [Searching Algorithm](https://github.com/shubhanshurav/The-Complete-FAANG-Preparation/tree/master/1%5D.%20DSA%20%2B%20CP/1%5D.%20DSA/2%5D.%20Algorithms/01%5D.%20Searching%20Algorithms)
 * [Sorting Algorithm](https://github.com/shubhanshurav/The-Complete-FAANG-Preparation/tree/master/1%5D.%20DSA%20%2B%20CP/1%5D.%20DSA/2%5D.%20Algorithms/02%5D.%20Sorting%20Algorithms)
@@ -35,6 +34,7 @@
 
 
 # TECHNICAL SUBJECTS:)
+
 <h1 align='center'>OBJECT ORIENTED PROGRAMMING</h1><br>
 
 
